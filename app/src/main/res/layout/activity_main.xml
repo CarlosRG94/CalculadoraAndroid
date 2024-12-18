@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="393dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="260dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="130dp"
+            android:height="50dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:gravity="center_vertical"
+            android:hint="@string/edit1" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="130dp"
+            android:height="50dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:gravity="center_vertical"
+            android:hint="@string/edit2" />
+
+        <TextView
+            android:id="@+id/resultadoview"
+            style="@style/EstiloResultado"
+            android:layout_width="260dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="130dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="296dp"
+        android:layout_height="469dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/bt7"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn7click"
+                android:text="@string/num_7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn8click"
+                android:text="@string/num_8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn9click"
+                android:text="@string/num_9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn4click"
+                android:text="@string/num_4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn5click"
+                android:text="@string/num_5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn6click"
+                android:text="@string/num_6" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn1click"
+                android:text="@string/num_1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn2click"
+                android:text="@string/num_2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn3click"
+                android:text="@string/num_3" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnpunto"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btnpunto_click"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/EstiloBotonNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn0click"
+                android:text="@string/num_0" />
+
+            <Button
+                android:id="@+id/btnigual"
+                style="@style/EstiloBotonIgual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btnresu_click"
+                android:text="@string/igual" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnclear"
+                style="@style/EstiloBotonClear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn_clear"
+                android:text="@string/clear" />
+
+            <Button
+                android:id="@+id/btnmostrar"
+                style="@style/EstiloBotonShow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="btn_show"
+                android:text="@string/show" />
+
+            <ImageButton
+                android:id="@+id/btnguardar"
+                style="@style/EstiloBotonSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="Guardar"
+                android:onClick="btn_save"
+                app:srcCompat="@android:drawable/ic_menu_save"
+                app:tint="@color/blanco" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="89dp"
+        android:layout_height="382dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+            <RadioButton
+                android:id="@+id/btndiv"
+                style="@style/EstiloBotonOperador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/div" />
+
+            <RadioButton
+                android:id="@+id/btnmulti"
+                style="@style/EstiloBotonOperador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/multi" />
+
+            <RadioButton
+                android:id="@+id/btnrest"
+                style="@style/EstiloBotonOperador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/rest" />
+
+            <RadioButton
+                android:id="@+id/btnsum"
+                style="@style/EstiloBotonOperador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/sum" />
+        </RadioGroup>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
